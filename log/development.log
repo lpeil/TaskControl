@@ -1,0 +1,38 @@
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE DATABASE `task_control_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE DATABASE `task_control_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for ::1 at 2020-08-29 20:31:57 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/peil/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/peil/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.7ms | Allocations: 407)
+Completed 200 OK in 20ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 2375)
+
+
+Started GET "/" for ::1 at 2020-08-29 20:38:03 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 186)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/peil/codes/TaskControl/public/packs
+[Webpacker] Hash: e1201fd510952fb43a66
+Version: webpack 4.44.1
+Time: 2602ms
+Built at: 2020-08-29 20:38:07
+                                 Asset       Size   Chunks                         Chunk Names
+      js/index-85d4d0e94cdd81d16706.js   1.02 MiB    index  [emitted] [immutable]  index
+  js/index-85d4d0e94cdd81d16706.js.map   1.18 MiB    index  [emitted] [dev]        index
+    js/initial-8c5c95e301ec18ff8f02.js   78.6 KiB  initial  [emitted] [immutable]  initial
+js/initial-8c5c95e301ec18ff8f02.js.map     89 KiB  initial  [emitted] [dev]        initial
+                         manifest.json  633 bytes           [emitted]              
+Entrypoint index = js/index-85d4d0e94cdd81d16706.js js/index-85d4d0e94cdd81d16706.js.map
+Entrypoint initial = js/initial-8c5c95e301ec18ff8f02.js js/initial-8c5c95e301ec18ff8f02.js.map
+[./app/javascript/packs/index.js] 477 bytes {index} [built]
+[./app/javascript/packs/initial.js] 163 bytes {initial} {index} [built]
+    + 11 hidden modules
+
+Completed 200 OK in 3411ms (Views: 3407.2ms | ActiveRecord: 0.0ms | Allocations: 19217)
+
+
