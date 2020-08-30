@@ -1,10 +1,10 @@
 {
-  "api/api.js": "/packs/js/api/api-e1a1c9ea195252cb7cd0.js",
-  "api/api.js.map": "/packs/js/api/api-e1a1c9ea195252cb7cd0.js.map",
-  "api/sign.js": "/packs/js/api/sign-e19a2c5cc50095328629.js",
-  "api/sign.js.map": "/packs/js/api/sign-e19a2c5cc50095328629.js.map",
-  "app.js": "/packs/js/app-0cbc4f96d0f03415ccc7.js",
-  "app.js.map": "/packs/js/app-0cbc4f96d0f03415ccc7.js.map",
+  "api/api.js": "/packs/js/api/api-63534d3ba4a4e08cfebf.js",
+  "api/api.js.map": "/packs/js/api/api-63534d3ba4a4e08cfebf.js.map",
+  "api/sign.js": "/packs/js/api/sign-a921cbee374d9363a7c2.js",
+  "api/sign.js.map": "/packs/js/api/sign-a921cbee374d9363a7c2.js.map",
+  "app.js": "/packs/js/app-cdee9f3465e839c28f5c.js",
+  "app.js.map": "/packs/js/app-cdee9f3465e839c28f5c.js.map",
   "components/Body/index.js": "/packs/js/components/Body/index-d8152f352eabfe325a56.js",
   "components/Body/index.js.map": "/packs/js/components/Body/index-d8152f352eabfe325a56.js.map",
   "components/Button/index.js": "/packs/js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js",
@@ -17,8 +17,8 @@
   "components/LeftMenu/style.js.map": "/packs/js/components/LeftMenu/style-f1af1d89abc3607b81c1.js.map",
   "components/Page/index.js": "/packs/js/components/Page/index-f1abab81465386212c44.js",
   "components/Page/index.js.map": "/packs/js/components/Page/index-f1abab81465386212c44.js.map",
-  "components/Typography/index.js": "/packs/js/components/Typography/index-3f32d33f321a39e5a84a.js",
-  "components/Typography/index.js.map": "/packs/js/components/Typography/index-3f32d33f321a39e5a84a.js.map",
+  "components/Typography/index.js": "/packs/js/components/Typography/index-e124f89f19cff91805bc.js",
+  "components/Typography/index.js.map": "/packs/js/components/Typography/index-e124f89f19cff91805bc.js.map",
   "config/store.js": "/packs/js/config/store-4c1f770d67eb538cf0c0.js",
   "config/store.js.map": "/packs/js/config/store-4c1f770d67eb538cf0c0.js.map",
   "config/themes.js": "/packs/js/config/themes-1464aa3739ab0b7e4a75.js",
@@ -26,26 +26,26 @@
   "entrypoints": {
     "api/api": {
       "js": [
-        "/packs/js/api/api-e1a1c9ea195252cb7cd0.js"
+        "/packs/js/api/api-63534d3ba4a4e08cfebf.js"
       ],
       "js.map": [
-        "/packs/js/api/api-e1a1c9ea195252cb7cd0.js.map"
+        "/packs/js/api/api-63534d3ba4a4e08cfebf.js.map"
       ]
     },
     "api/sign": {
       "js": [
-        "/packs/js/api/sign-e19a2c5cc50095328629.js"
+        "/packs/js/api/sign-a921cbee374d9363a7c2.js"
       ],
       "js.map": [
-        "/packs/js/api/sign-e19a2c5cc50095328629.js.map"
+        "/packs/js/api/sign-a921cbee374d9363a7c2.js.map"
       ]
     },
     "app": {
       "js": [
-        "/packs/js/app-0cbc4f96d0f03415ccc7.js"
+        "/packs/js/app-cdee9f3465e839c28f5c.js"
       ],
       "js.map": [
-        "/packs/js/app-0cbc4f96d0f03415ccc7.js.map"
+        "/packs/js/app-cdee9f3465e839c28f5c.js.map"
       ]
     },
     "components/Body/index": {
@@ -98,10 +98,10 @@
     },
     "components/Typography/index": {
       "js": [
-        "/packs/js/components/Typography/index-3f32d33f321a39e5a84a.js"
+        "/packs/js/components/Typography/index-e124f89f19cff91805bc.js"
       ],
       "js.map": [
-        "/packs/js/components/Typography/index-3f32d33f321a39e5a84a.js.map"
+        "/packs/js/components/Typography/index-e124f89f19cff91805bc.js.map"
       ]
     },
     "config/store": {
@@ -122,18 +122,18 @@
     },
     "index": {
       "js": [
-        "/packs/js/index-abbce7e0b0a8298e7af8.js"
+        "/packs/js/index-80637cd3232bf9d957f7.js"
       ],
       "js.map": [
-        "/packs/js/index-abbce7e0b0a8298e7af8.js.map"
+        "/packs/js/index-80637cd3232bf9d957f7.js.map"
       ]
     },
     "initial": {
       "js": [
-        "/packs/js/initial-f1ddffe15058eea9652d.js"
+        "/packs/js/initial-097af507630e939323d2.js"
       ],
       "js.map": [
-        "/packs/js/initial-f1ddffe15058eea9652d.js.map"
+        "/packs/js/initial-097af507630e939323d2.js.map"
       ]
     },
     "pages/Home/index": {
@@ -154,10 +154,10 @@
     },
     "pages/Login/index": {
       "js": [
-        "/packs/js/pages/Login/index-e310c6cb1808a9bddcb3.js"
+        "/packs/js/pages/Login/index-ed3ae0ec0477d5a2c222.js"
       ],
       "js.map": [
-        "/packs/js/pages/Login/index-e310c6cb1808a9bddcb3.js.map"
+        "/packs/js/pages/Login/index-ed3ae0ec0477d5a2c222.js.map"
       ]
     },
     "pages/Login/style": {
@@ -177,16 +177,16 @@
       ]
     }
   },
-  "index.js": "/packs/js/index-abbce7e0b0a8298e7af8.js",
-  "index.js.map": "/packs/js/index-abbce7e0b0a8298e7af8.js.map",
-  "initial.js": "/packs/js/initial-f1ddffe15058eea9652d.js",
-  "initial.js.map": "/packs/js/initial-f1ddffe15058eea9652d.js.map",
+  "index.js": "/packs/js/index-80637cd3232bf9d957f7.js",
+  "index.js.map": "/packs/js/index-80637cd3232bf9d957f7.js.map",
+  "initial.js": "/packs/js/initial-097af507630e939323d2.js",
+  "initial.js.map": "/packs/js/initial-097af507630e939323d2.js.map",
   "pages/Home/index.js": "/packs/js/pages/Home/index-90c29a29f4e5ae43d302.js",
   "pages/Home/index.js.map": "/packs/js/pages/Home/index-90c29a29f4e5ae43d302.js.map",
   "pages/Logged/index.js": "/packs/js/pages/Logged/index-885742b64e4da02b28f7.js",
   "pages/Logged/index.js.map": "/packs/js/pages/Logged/index-885742b64e4da02b28f7.js.map",
-  "pages/Login/index.js": "/packs/js/pages/Login/index-e310c6cb1808a9bddcb3.js",
-  "pages/Login/index.js.map": "/packs/js/pages/Login/index-e310c6cb1808a9bddcb3.js.map",
+  "pages/Login/index.js": "/packs/js/pages/Login/index-ed3ae0ec0477d5a2c222.js",
+  "pages/Login/index.js.map": "/packs/js/pages/Login/index-ed3ae0ec0477d5a2c222.js.map",
   "pages/Login/style.js": "/packs/js/pages/Login/style-30704957e6d331d4e93a.js",
   "pages/Login/style.js.map": "/packs/js/pages/Login/style-30704957e6d331d4e93a.js.map",
   "routes.js": "/packs/js/routes-c49f5e30153abf30e234.js",
