@@ -559,3 +559,181 @@ Entrypoint routes = js/routes-c49f5e30153abf30e234.js js/routes-c49f5e30153abf30
 Completed 200 OK in 2292ms (Views: 2291.2ms | ActiveRecord: 0.0ms | Allocations: 5536)
 
 
+Started GET "/" for ::1 at 2020-08-29 21:26:09 -0300
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/peil/codes/TaskControl/public/packs
+[Webpacker] Hash: bc48097091e46216f162
+Version: webpack 4.44.1
+Time: 1734ms
+Built at: 2020-08-29 21:26:12
+                                                     Asset      Size                       Chunks                         Chunk Names
+                        js/api/api-63534d3ba4a4e08cfebf.js  88.2 KiB                      api/api  [emitted] [immutable]  api/api
+                    js/api/api-63534d3ba4a4e08cfebf.js.map  90.4 KiB                      api/api  [emitted] [dev]        api/api
+                       js/api/sign-a921cbee374d9363a7c2.js  89.7 KiB                     api/sign  [emitted] [immutable]  api/sign
+                   js/api/sign-a921cbee374d9363a7c2.js.map  90.9 KiB                     api/sign  [emitted] [dev]        api/sign
+                            js/app-2d7f0f5ad63f43922cba.js  1.48 MiB                          app  [emitted] [immutable]  app
+                        js/app-2d7f0f5ad63f43922cba.js.map   1.6 MiB                          app  [emitted] [dev]        app
+          js/components/Body/index-d8152f352eabfe325a56.js   189 KiB        components/Body/index  [emitted] [immutable]  components/Body/index
+      js/components/Body/index-d8152f352eabfe325a56.js.map   211 KiB        components/Body/index  [emitted] [dev]        components/Body/index
+        js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js   189 KiB      components/Button/index  [emitted] [immutable]  components/Button/index
+    js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js.map   211 KiB      components/Button/index  [emitted] [dev]        components/Button/index
+         js/components/Input/index-94f8c2599ed97204fa1f.js   189 KiB       components/Input/index  [emitted] [immutable]  components/Input/index
+     js/components/Input/index-94f8c2599ed97204fa1f.js.map   211 KiB       components/Input/index  [emitted] [dev]        components/Input/index
+      js/components/LeftMenu/index-96e8abf17fbba40cfd6f.js   332 KiB    components/LeftMenu/index  [emitted] [immutable]  components/LeftMenu/index
+  js/components/LeftMenu/index-96e8abf17fbba40cfd6f.js.map   344 KiB    components/LeftMenu/index  [emitted] [dev]        components/LeftMenu/index
+      js/components/LeftMenu/style-f1af1d89abc3607b81c1.js   325 KiB    components/LeftMenu/style  [emitted] [immutable]  components/LeftMenu/style
+  js/components/LeftMenu/style-f1af1d89abc3607b81c1.js.map   341 KiB    components/LeftMenu/style  [emitted] [dev]        components/LeftMenu/style
+          js/components/Page/index-f1abab81465386212c44.js   189 KiB        components/Page/index  [emitted] [immutable]  components/Page/index
+      js/components/Page/index-f1abab81465386212c44.js.map   211 KiB        components/Page/index  [emitted] [dev]        components/Page/index
+    js/components/Typography/index-3f32d33f321a39e5a84a.js   190 KiB  components/Typography/index  [emitted] [immutable]  components/Typography/index
+js/components/Typography/index-3f32d33f321a39e5a84a.js.map   211 KiB  components/Typography/index  [emitted] [dev]        components/Typography/index
+                   js/config/store-4c1f770d67eb538cf0c0.js    34 KiB                 config/store  [emitted] [immutable]  config/store
+               js/config/store-4c1f770d67eb538cf0c0.js.map  35.1 KiB                 config/store  [emitted] [dev]        config/store
+                  js/config/themes-1464aa3739ab0b7e4a75.js  4.29 KiB                config/themes  [emitted] [immutable]  config/themes
+              js/config/themes-1464aa3739ab0b7e4a75.js.map  3.94 KiB                config/themes  [emitted] [dev]        config/themes
+                          js/index-bfece2504a5fb0ed0f91.js  1.48 MiB                        index  [emitted] [immutable]  index
+                      js/index-bfece2504a5fb0ed0f91.js.map   1.6 MiB                        index  [emitted] [dev]        index
+                        js/initial-a27ca966fb2775a6f289.js  1.48 MiB                      initial  [emitted] [immutable]  initial
+                    js/initial-a27ca966fb2775a6f289.js.map   1.6 MiB                      initial  [emitted] [dev]        initial
+               js/pages/Home/index-90c29a29f4e5ae43d302.js  78.6 KiB             pages/Home/index  [emitted] [immutable]  pages/Home/index
+           js/pages/Home/index-90c29a29f4e5ae43d302.js.map    89 KiB             pages/Home/index  [emitted] [dev]        pages/Home/index
+             js/pages/Logged/index-885742b64e4da02b28f7.js   340 KiB           pages/Logged/index  [emitted] [immutable]  pages/Logged/index
+         js/pages/Logged/index-885742b64e4da02b28f7.js.map   346 KiB           pages/Logged/index  [emitted] [dev]        pages/Logged/index
+              js/pages/Login/index-4f19c0c239b1b6d96416.js   416 KiB            pages/Login/index  [emitted] [immutable]  pages/Login/index
+          js/pages/Login/index-4f19c0c239b1b6d96416.js.map   426 KiB            pages/Login/index  [emitted] [dev]        pages/Login/index
+              js/pages/Login/style-30704957e6d331d4e93a.js   190 KiB            pages/Login/style  [emitted] [immutable]  pages/Login/style
+          js/pages/Login/style-30704957e6d331d4e93a.js.map   211 KiB            pages/Login/style  [emitted] [dev]        pages/Login/style
+                         js/routes-c49f5e30153abf30e234.js   225 KiB                       routes  [emitted] [immutable]  routes
+                     js/routes-c49f5e30153abf30e234.js.map   232 KiB                       routes  [emitted] [dev]        routes
+                                             manifest.json  6.89 KiB                               [emitted]              
+Entrypoint api/api = js/api/api-63534d3ba4a4e08cfebf.js js/api/api-63534d3ba4a4e08cfebf.js.map
+Entrypoint api/sign = js/api/sign-a921cbee374d9363a7c2.js js/api/sign-a921cbee374d9363a7c2.js.map
+Entrypoint app = js/app-2d7f0f5ad63f43922cba.js js/app-2d7f0f5ad63f43922cba.js.map
+Entrypoint components/Body/index = js/components/Body/index-d8152f352eabfe325a56.js js/components/Body/index-d8152f352eabfe325a56.js.map
+Entrypoint components/Button/index = js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js.map
+Entrypoint components/Input/index = js/components/Input/index-94f8c2599ed97204fa1f.js js/components/Input/index-94f8c2599ed97204fa1f.js.map
+Entrypoint components/LeftMenu/index = js/components/LeftMenu/index-96e8abf17fbba40cfd6f.js js/components/LeftMenu/index-96e8abf17fbba40cfd6f.js.map
+Entrypoint components/LeftMenu/style = js/components/LeftMenu/style-f1af1d89abc3607b81c1.js js/components/LeftMenu/style-f1af1d89abc3607b81c1.js.map
+Entrypoint components/Page/index = js/components/Page/index-f1abab81465386212c44.js js/components/Page/index-f1abab81465386212c44.js.map
+Entrypoint components/Typography/index = js/components/Typography/index-3f32d33f321a39e5a84a.js js/components/Typography/index-3f32d33f321a39e5a84a.js.map
+Entrypoint config/store = js/config/store-4c1f770d67eb538cf0c0.js js/config/store-4c1f770d67eb538cf0c0.js.map
+Entrypoint config/themes = js/config/themes-1464aa3739ab0b7e4a75.js js/config/themes-1464aa3739ab0b7e4a75.js.map
+Entrypoint index = js/index-bfece2504a5fb0ed0f91.js js/index-bfece2504a5fb0ed0f91.js.map
+Entrypoint initial = js/initial-a27ca966fb2775a6f289.js js/initial-a27ca966fb2775a6f289.js.map
+Entrypoint pages/Home/index = js/pages/Home/index-90c29a29f4e5ae43d302.js js/pages/Home/index-90c29a29f4e5ae43d302.js.map
+Entrypoint pages/Logged/index = js/pages/Logged/index-885742b64e4da02b28f7.js js/pages/Logged/index-885742b64e4da02b28f7.js.map
+Entrypoint pages/Login/index = js/pages/Login/index-4f19c0c239b1b6d96416.js js/pages/Login/index-4f19c0c239b1b6d96416.js.map
+Entrypoint pages/Login/style = js/pages/Login/style-30704957e6d331d4e93a.js js/pages/Login/style-30704957e6d331d4e93a.js.map
+Entrypoint routes = js/routes-c49f5e30153abf30e234.js js/routes-c49f5e30153abf30e234.js.map
+[./app/javascript/packs/api/api.js] 1.81 KiB {api/api} {api/sign} {app} {index} {initial} {pages/Login/index} [built]
+[./app/javascript/packs/api/sign.js] 531 bytes {api/sign} {app} {index} {initial} {pages/Login/index} [built]
+[./app/javascript/packs/app.js] 1.42 KiB {app} {index} {initial} [built]
+[./app/javascript/packs/config/store.js] 398 bytes {config/store} {index} {initial} [built]
+[./app/javascript/packs/config/themes.js] 257 bytes {config/themes} {app} {index} {initial} [built]
+[./app/javascript/packs/index.js] 477 bytes {index} [built]
+[./app/javascript/packs/initial.js] 646 bytes {initial} {index} [built]
+[./app/javascript/packs/pages/Home/index.js] 154 bytes {pages/Home/index} {app} {index} {initial} {pages/Logged/index} {routes} [built]
+[./app/javascript/packs/pages/Logged/index.js] 1.02 KiB {pages/Logged/index} {app} {index} {initial} [built]
+[./app/javascript/packs/pages/Login/index.js] 4.35 KiB {pages/Login/index} {app} {index} {initial} [built]
+[./app/javascript/packs/pages/Login/style.js] 1.45 KiB {pages/Login/style} {app} {index} {initial} {pages/Login/index} [built]
+[./app/javascript/packs/routes.js] 659 bytes {routes} {app} {index} {initial} {pages/Logged/index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {app} {components/LeftMenu/index} {components/LeftMenu/style} {config/store} {index} {initial} {pages/Logged/index} {pages/Login/index} {routes} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {app} {config/store} {index} {initial} [built]
+    + 97 hidden modules
+
+Completed 200 OK in 2471ms (Views: 2470.5ms | ActiveRecord: 0.0ms | Allocations: 5529)
+
+
+Started GET "/" for ::1 at 2020-08-29 21:29:19 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 186)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/peil/codes/TaskControl/public/packs
+[Webpacker] Hash: bc48097091e46216f162
+Version: webpack 4.44.1
+Time: 1285ms
+Built at: 2020-08-29 21:29:21
+                                                     Asset      Size                       Chunks                         Chunk Names
+                        js/api/api-63534d3ba4a4e08cfebf.js  88.2 KiB                      api/api  [emitted] [immutable]  api/api
+                    js/api/api-63534d3ba4a4e08cfebf.js.map  90.4 KiB                      api/api  [emitted] [dev]        api/api
+                       js/api/sign-a921cbee374d9363a7c2.js  89.7 KiB                     api/sign  [emitted] [immutable]  api/sign
+                   js/api/sign-a921cbee374d9363a7c2.js.map  90.9 KiB                     api/sign  [emitted] [dev]        api/sign
+                            js/app-2d7f0f5ad63f43922cba.js  1.48 MiB                          app  [emitted] [immutable]  app
+                        js/app-2d7f0f5ad63f43922cba.js.map   1.6 MiB                          app  [emitted] [dev]        app
+          js/components/Body/index-d8152f352eabfe325a56.js   189 KiB        components/Body/index  [emitted] [immutable]  components/Body/index
+      js/components/Body/index-d8152f352eabfe325a56.js.map   211 KiB        components/Body/index  [emitted] [dev]        components/Body/index
+        js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js   189 KiB      components/Button/index  [emitted] [immutable]  components/Button/index
+    js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js.map   211 KiB      components/Button/index  [emitted] [dev]        components/Button/index
+         js/components/Input/index-94f8c2599ed97204fa1f.js   189 KiB       components/Input/index  [emitted] [immutable]  components/Input/index
+     js/components/Input/index-94f8c2599ed97204fa1f.js.map   211 KiB       components/Input/index  [emitted] [dev]        components/Input/index
+      js/components/LeftMenu/index-96e8abf17fbba40cfd6f.js   332 KiB    components/LeftMenu/index  [emitted] [immutable]  components/LeftMenu/index
+  js/components/LeftMenu/index-96e8abf17fbba40cfd6f.js.map   344 KiB    components/LeftMenu/index  [emitted] [dev]        components/LeftMenu/index
+      js/components/LeftMenu/style-f1af1d89abc3607b81c1.js   325 KiB    components/LeftMenu/style  [emitted] [immutable]  components/LeftMenu/style
+  js/components/LeftMenu/style-f1af1d89abc3607b81c1.js.map   341 KiB    components/LeftMenu/style  [emitted] [dev]        components/LeftMenu/style
+          js/components/Page/index-f1abab81465386212c44.js   189 KiB        components/Page/index  [emitted] [immutable]  components/Page/index
+      js/components/Page/index-f1abab81465386212c44.js.map   211 KiB        components/Page/index  [emitted] [dev]        components/Page/index
+    js/components/Typography/index-3f32d33f321a39e5a84a.js   190 KiB  components/Typography/index  [emitted] [immutable]  components/Typography/index
+js/components/Typography/index-3f32d33f321a39e5a84a.js.map   211 KiB  components/Typography/index  [emitted] [dev]        components/Typography/index
+                   js/config/store-4c1f770d67eb538cf0c0.js    34 KiB                 config/store  [emitted] [immutable]  config/store
+               js/config/store-4c1f770d67eb538cf0c0.js.map  35.1 KiB                 config/store  [emitted] [dev]        config/store
+                  js/config/themes-1464aa3739ab0b7e4a75.js  4.29 KiB                config/themes  [emitted] [immutable]  config/themes
+              js/config/themes-1464aa3739ab0b7e4a75.js.map  3.94 KiB                config/themes  [emitted] [dev]        config/themes
+                          js/index-bfece2504a5fb0ed0f91.js  1.48 MiB                        index  [emitted] [immutable]  index
+                      js/index-bfece2504a5fb0ed0f91.js.map   1.6 MiB                        index  [emitted] [dev]        index
+                        js/initial-a27ca966fb2775a6f289.js  1.48 MiB                      initial  [emitted] [immutable]  initial
+                    js/initial-a27ca966fb2775a6f289.js.map   1.6 MiB                      initial  [emitted] [dev]        initial
+               js/pages/Home/index-90c29a29f4e5ae43d302.js  78.6 KiB             pages/Home/index  [emitted] [immutable]  pages/Home/index
+           js/pages/Home/index-90c29a29f4e5ae43d302.js.map    89 KiB             pages/Home/index  [emitted] [dev]        pages/Home/index
+             js/pages/Logged/index-885742b64e4da02b28f7.js   340 KiB           pages/Logged/index  [emitted] [immutable]  pages/Logged/index
+         js/pages/Logged/index-885742b64e4da02b28f7.js.map   346 KiB           pages/Logged/index  [emitted] [dev]        pages/Logged/index
+              js/pages/Login/index-4f19c0c239b1b6d96416.js   416 KiB            pages/Login/index  [emitted] [immutable]  pages/Login/index
+          js/pages/Login/index-4f19c0c239b1b6d96416.js.map   426 KiB            pages/Login/index  [emitted] [dev]        pages/Login/index
+              js/pages/Login/style-30704957e6d331d4e93a.js   190 KiB            pages/Login/style  [emitted] [immutable]  pages/Login/style
+          js/pages/Login/style-30704957e6d331d4e93a.js.map   211 KiB            pages/Login/style  [emitted] [dev]        pages/Login/style
+                         js/routes-c49f5e30153abf30e234.js   225 KiB                       routes  [emitted] [immutable]  routes
+                     js/routes-c49f5e30153abf30e234.js.map   232 KiB                       routes  [emitted] [dev]        routes
+                                             manifest.json  6.89 KiB                               [emitted]              
+Entrypoint api/api = js/api/api-63534d3ba4a4e08cfebf.js js/api/api-63534d3ba4a4e08cfebf.js.map
+Entrypoint api/sign = js/api/sign-a921cbee374d9363a7c2.js js/api/sign-a921cbee374d9363a7c2.js.map
+Entrypoint app = js/app-2d7f0f5ad63f43922cba.js js/app-2d7f0f5ad63f43922cba.js.map
+Entrypoint components/Body/index = js/components/Body/index-d8152f352eabfe325a56.js js/components/Body/index-d8152f352eabfe325a56.js.map
+Entrypoint components/Button/index = js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js js/components/Button/index-eebf3e0cdd1ef3c8b8f5.js.map
+Entrypoint components/Input/index = js/components/Input/index-94f8c2599ed97204fa1f.js js/components/Input/index-94f8c2599ed97204fa1f.js.map
+Entrypoint components/LeftMenu/index = js/components/LeftMenu/index-96e8abf17fbba40cfd6f.js js/components/LeftMenu/index-96e8abf17fbba40cfd6f.js.map
+Entrypoint components/LeftMenu/style = js/components/LeftMenu/style-f1af1d89abc3607b81c1.js js/components/LeftMenu/style-f1af1d89abc3607b81c1.js.map
+Entrypoint components/Page/index = js/components/Page/index-f1abab81465386212c44.js js/components/Page/index-f1abab81465386212c44.js.map
+Entrypoint components/Typography/index = js/components/Typography/index-3f32d33f321a39e5a84a.js js/components/Typography/index-3f32d33f321a39e5a84a.js.map
+Entrypoint config/store = js/config/store-4c1f770d67eb538cf0c0.js js/config/store-4c1f770d67eb538cf0c0.js.map
+Entrypoint config/themes = js/config/themes-1464aa3739ab0b7e4a75.js js/config/themes-1464aa3739ab0b7e4a75.js.map
+Entrypoint index = js/index-bfece2504a5fb0ed0f91.js js/index-bfece2504a5fb0ed0f91.js.map
+Entrypoint initial = js/initial-a27ca966fb2775a6f289.js js/initial-a27ca966fb2775a6f289.js.map
+Entrypoint pages/Home/index = js/pages/Home/index-90c29a29f4e5ae43d302.js js/pages/Home/index-90c29a29f4e5ae43d302.js.map
+Entrypoint pages/Logged/index = js/pages/Logged/index-885742b64e4da02b28f7.js js/pages/Logged/index-885742b64e4da02b28f7.js.map
+Entrypoint pages/Login/index = js/pages/Login/index-4f19c0c239b1b6d96416.js js/pages/Login/index-4f19c0c239b1b6d96416.js.map
+Entrypoint pages/Login/style = js/pages/Login/style-30704957e6d331d4e93a.js js/pages/Login/style-30704957e6d331d4e93a.js.map
+Entrypoint routes = js/routes-c49f5e30153abf30e234.js js/routes-c49f5e30153abf30e234.js.map
+[./app/javascript/packs/api/api.js] 1.81 KiB {api/api} {api/sign} {app} {index} {initial} {pages/Login/index} [built]
+[./app/javascript/packs/api/sign.js] 531 bytes {api/sign} {app} {index} {initial} {pages/Login/index} [built]
+[./app/javascript/packs/app.js] 1.42 KiB {app} {index} {initial} [built]
+[./app/javascript/packs/config/store.js] 398 bytes {config/store} {index} {initial} [built]
+[./app/javascript/packs/config/themes.js] 257 bytes {config/themes} {app} {index} {initial} [built]
+[./app/javascript/packs/index.js] 477 bytes {index} [built]
+[./app/javascript/packs/initial.js] 646 bytes {initial} {index} [built]
+[./app/javascript/packs/pages/Home/index.js] 154 bytes {pages/Home/index} {app} {index} {initial} {pages/Logged/index} {routes} [built]
+[./app/javascript/packs/pages/Logged/index.js] 1.02 KiB {pages/Logged/index} {app} {index} {initial} [built]
+[./app/javascript/packs/pages/Login/index.js] 4.35 KiB {pages/Login/index} {app} {index} {initial} [built]
+[./app/javascript/packs/pages/Login/style.js] 1.45 KiB {pages/Login/style} {app} {index} {initial} {pages/Login/index} [built]
+[./app/javascript/packs/routes.js] 659 bytes {routes} {app} {index} {initial} {pages/Logged/index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {app} {components/LeftMenu/index} {components/LeftMenu/style} {config/store} {index} {initial} {pages/Logged/index} {pages/Login/index} {routes} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {app} {config/store} {index} {initial} [built]
+    + 97 hidden modules
+
+Completed 200 OK in 1999ms (Views: 1995.3ms | ActiveRecord: 0.0ms | Allocations: 8800)
+
+
