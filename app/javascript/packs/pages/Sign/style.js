@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LoginPage = styled.div`
+export const SignPage = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -13,7 +13,7 @@ export const LoginPage = styled.div`
   background-color: ${props => props.theme.bg};
 `;
 
-export const LoginForm = styled.form`
+export const SignForm = styled.form`
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -24,7 +24,7 @@ export const LoginForm = styled.form`
   background-color: ${props => props.theme.menu};
   border-radius: 5px;
 `
-export const LoginLinks = styled.div`
+export const SignLinks = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;

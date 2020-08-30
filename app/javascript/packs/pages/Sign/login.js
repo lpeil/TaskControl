@@ -8,9 +8,9 @@ import Button from '../../components/Button';
 import Typography from '../../components/Typography';
 
 import {
-  LoginPage,
-  LoginForm,
-  LoginLinks
+  SignPage,
+  SignForm,
+  SignLinks
 } from './style'
 
 const Login = () => {
@@ -26,8 +26,8 @@ const Login = () => {
   }
 
   return (
-    <LoginPage>
-      <LoginForm onSubmit={_submit}>
+    <SignPage>
+      <SignForm onSubmit={_submit}>
         <Typography variant="h2" margin="2">Entrar</Typography>
         <Input 
           type="email"
@@ -40,12 +40,12 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <Button type="submit">Entrar</Button>
-        <LoginLinks>
+        <SignLinks>
           <Link to="/signup">Registrar-se</Link>
           <Link to="/recoverPassword">Recuperar Senha</Link>
-        </LoginLinks>
-      </LoginForm>
-    </LoginPage>
+        </SignLinks>
+      </SignForm>
+    </SignPage>
   )
 }
 

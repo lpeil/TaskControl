@@ -5,8 +5,8 @@ import { ThemeProvider } from 'styled-components'
 
 import themes from './config/themes';
 
-import Login from './pages/Login'
-import Logged from './pages/Logged'
+import Logged from './routes/logged'
+import UnLogged from './routes/unlogged'
 
 const App = () => {
   const user = useSelector(state => state.user);
@@ -17,9 +17,9 @@ const App = () => {
       <BrowserRouter>
         {user.id ?
           <Logged /> :
-          <Login /> 
+          <UnLogged /> 
         }
-      </BrowserRouter>        
+      </BrowserRouter>
     </ThemeProvider>
   )
 }

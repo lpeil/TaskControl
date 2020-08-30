@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   root 'homepage#index'
-
-  post '/api/sign/in', to: 'sessions#create'
-  delete '/api/sign/out', to: 'sessions#destroy'
-  get '/api/sign/check', to: 'sessions#is_logged_in?'
   
-  resources :users, only: [:create, :show, :index]
+  get '/api/sign/out' => 'sessions#destroy'
+  post '/api/sign/in' => 'sessions#create'
+  post '/api/sign/up' => 'users#create'
+
+  get '/*all', to: 'homepage#index'
 end

@@ -4,6 +4,10 @@ export const signIn = (params = {}) => (
   api.post('/sign/in', params).then((response) => response.data)
 )
 
+export const signUp = (params = {}) => (
+  api.post('/sign/up', params).then((response) => response.data)
+)
+
 export const signOut = () => (
   api.delete('/sign/out').then((response) => response.data)
 )
