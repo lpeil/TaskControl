@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 
 import { signIn } from '../../api/sign';
@@ -14,6 +15,8 @@ import {
 } from './style'
 
 const Login = () => {
+  const dispatch = useDispatch();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -21,7 +24,19 @@ const Login = () => {
     e.preventDefault();
 
     signIn({email, password}).then(data => {
-      console.log(data);
+      if(data.user) {
+        dispatch({type: 'setAlert', alert: {
+          type: 'success',
+          text: 'Login feito com sucesso'
+        }})
+        dispatch({type: 'setUser',user: data.user})
+        localStorage.setItem('token', data.token)
+      } else {
+        dispatch({type: 'setAlert', alert: {
+          type: 'danger',
+          text: data.error
+        }})
+      }
     })
   }
 

@@ -1,13 +1,11 @@
 class SessionsController < ApplicationController
-
-  def new
-  end
-
   def create
     @user = User.find_by_email(params[:email])
     if @user && @user.authenticate(params[:password])
+      token = encode_token({user_id: @user.id})
       render json: {
-        user: @user
+        user: @user,
+        token: token
       }
     else
       render json: {
@@ -18,10 +16,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:user_id] = nil
+    session = nil
     render json: {
       message: 'sign out'
     }
   end
-
 end

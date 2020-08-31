@@ -5,7 +5,10 @@ themes.dark = {
   menu: '#373C3F',
   primary: '#397CC3',
   action: '#474C50',
-  text: '#FFF'
+  text: '#FFF',
+  success: '#4CAF50',
+  danger: '#ED4237',
+  warning: '#4896F3'
 }
 
 themes.light = {
@@ -13,7 +16,10 @@ themes.light = {
   menu: '#DDD',
   primary: '#397CC3',
   action: '#BBB',
-  text: '#000'
+  text: '#000',
+  success: '#4CAF50',
+  danger: '#ED4237',
+  warning: '#4896F3'
 }
 
 export default themes;

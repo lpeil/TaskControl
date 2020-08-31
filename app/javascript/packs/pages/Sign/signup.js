@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux'
+import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 import { signUp } from '../../api/sign';
@@ -14,6 +16,9 @@ import {
 } from './style'
 
 const Register = () => {
+  const history = useHistory();
+  const dispatch = useDispatch();
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,6 +28,11 @@ const Register = () => {
     e.preventDefault();
 
     if(password != repeatPassword) {
+      dispatch({type: 'setAlert', alert: {
+        type: 'danger',
+        text: 'As senhas não conferem'
+      }})
+
       return false
     }
 
@@ -34,7 +44,19 @@ const Register = () => {
         password_confirmation: repeatPassword
       }
     }).then((data) => {
-      console.log(data);
+      if(!data.error && data) {
+        dispatch({type: 'setAlert', alert: {
+          type: 'success',
+          text: 'Usuário criado com sucesso'
+        }})
+
+        history.push("/")
+      } else {
+        dispatch({type: 'setAlert',alert: {
+          type: 'danger',
+          text: data.error ?? 'Erro ao criar usuário'
+        }})
+      }
     })
   }
 

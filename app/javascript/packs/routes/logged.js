@@ -5,6 +5,8 @@ import Page from '../components/Page'
 import Body from '../components/Body'
 import LeftMenu from '../components/LeftMenu';
 
+import Home from '../pages/Home'
+
 const Component = () => {
   return (
     <Page>
