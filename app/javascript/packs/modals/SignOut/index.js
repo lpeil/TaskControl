@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 import {
   signOut
@@ -12,6 +13,7 @@ import Typography from '../../components/Typography'
 import Button from '../../components/Button'
 
 const SignOutModal = (props) => {
+  const { t } = useTranslation();
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -29,13 +31,13 @@ const SignOutModal = (props) => {
 
   return (
     <Modal show={props.show} setShow={props.setShow}>
-      <Typography variant="h2" margin="2">Deseja sair?</Typography>
+      <Typography variant="h2" margin="2">{t('Do you want to leave?')}</Typography>
       <ModalButtons>
         <Button color="primary" onClick={() => props.setShow(false)}>
-          Voltar
+          {t('Go back')}
         </Button>
         <Button color="danger" onClick={_signOut}>
-          Sair
+          {t('Sign Out')}
         </Button>
       </ModalButtons>
     </Modal>

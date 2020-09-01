@@ -4,8 +4,7 @@ export const initial = {
   alerts: [],
   user: {},
   theme: localStorage.getItem('theme') ?? 'dark',
-  createdTheme: JSON.parse(localStorage.getItem('createdTheme')) ?? {},
-  locale: 'pt-BR'
+  createdTheme: JSON.parse(localStorage.getItem('createdTheme')) ?? {}
 }
 
 function reducer(state = initial, action) {

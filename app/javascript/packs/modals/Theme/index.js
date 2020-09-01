@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { useTranslation } from 'react-i18next'
 
 import Modal from '../../components/Modal'
 import { ModalButtons } from '../../components/Modal/style'
@@ -13,6 +14,7 @@ import {
 } from './style';
 
 const ThemeModal = (props) => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
 
   const changeTheme = (e) => {
@@ -23,7 +25,7 @@ const ThemeModal = (props) => {
 
   return (
     <Modal show={props.show} setShow={props.setShow} width="390px">
-      <Typography variant="h2" margin="2">Escolha um tema</Typography>
+      <Typography variant="h2" margin="2">{t('Choose one theme')}</Typography>
       <Themes>
         <ThemeInput>
           <input
@@ -69,7 +71,7 @@ const ThemeModal = (props) => {
       <CreateTheme />
       <ModalButtons>
         <Button width="50%" color="primary" onClick={() => props.setShow(false)}>
-          Voltar
+          {t('Go back')}
         </Button>
       </ModalButtons>
     </Modal>

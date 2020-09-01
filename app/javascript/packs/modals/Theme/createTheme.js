@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next'
 import { useSelector, useDispatch } from 'react-redux';
 
 import {
@@ -7,6 +8,7 @@ import {
 } from './style'
 
 const CreateTheme = () => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const theme = useSelector(state => state.theme);
   const createdTheme = useSelector(state => state.createdTheme);
@@ -28,7 +30,7 @@ const CreateTheme = () => {
   return (
     <NewTheme show={theme === 'created'} >
       <NewThemeLabel>
-        <span>Background</span>
+        <span>{t('Background')}</span>
         <input 
           type="color"
           value={bg}
@@ -39,7 +41,7 @@ const CreateTheme = () => {
         />
       </NewThemeLabel>
       <NewThemeLabel>
-        <span>Menu</span>
+        <span>{t('Menu')}</span>
         <input 
           type="color"
           value={menu}
@@ -50,7 +52,7 @@ const CreateTheme = () => {
         />
       </NewThemeLabel>
       <NewThemeLabel>
-        <span>Cor primária</span>
+        <span>{t('Primary color')}</span>
         <input
           type="color"
           value={primary}
@@ -61,7 +63,7 @@ const CreateTheme = () => {
         />
       </NewThemeLabel>
       <NewThemeLabel>
-        <span>Cor segundária</span>
+        <span>{t('Secondary color')}</span>
         <input
           type="color"
           value={action}
@@ -72,7 +74,7 @@ const CreateTheme = () => {
         />
       </NewThemeLabel>
       <NewThemeLabel>
-        <span>Texto</span>
+        <span>{t('Text')}</span>
         <input
           type="color"
           value={text}

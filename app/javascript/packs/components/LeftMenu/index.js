@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import ThemeModal from '../../modals/Theme'
 import SignOutModal from '../../modals/SignOut'
+import LanguageModal from '../../modals/Language'
 
 import {
   Menu,
@@ -13,6 +15,8 @@ import {
 } from './style';
 
 const LeftMenu = () => {
+  const { t } = useTranslation();
+
   const [modalTheme, setModalTheme] = useState(false);
   const [modalSignOut, setModalSignOut] = useState(false);
   const [modalSettings, setModalSettings] = useState(false);
@@ -20,10 +24,10 @@ const LeftMenu = () => {
 
   return (
     <Menu>
-      <MenuHome to="/">Task Control</MenuHome>
+      <MenuHome to="/">{t('Task Control')}</MenuHome>
       <MenuSection>
         <MenuSectionTitle>
-          <span>Projetos</span>
+          <span>{t('Projects')}</span>
         </MenuSectionTitle>
         <MenuList className="menu-projects">
           <NavLink to="/project/fmon" activeClassName="active">
@@ -39,25 +43,26 @@ const LeftMenu = () => {
       </MenuSection>
       <MenuSection>
         <MenuSectionTitle>
-          <span>Configurações</span>
+          <span>{t('Settings')}</span>
         </MenuSectionTitle>
         <MenuList>
           <span onClick={() => setModalSettings(true)}>
-            <i className="fas fa-user-circle"></i> Minha Conta
+            <i className="fas fa-user-circle"></i> {t('My Account')}
           </span>
           <span onClick={() => setModalLanguage(true)}>
-            <i className="fas fa-globe"></i> Idioma
+            <i className="fas fa-globe"></i> {t('Language')}
           </span>
           <span onClick={() => setModalTheme(true)}>
-            <i className="fas fa-palette"></i> Tema e Cores
+            <i className="fas fa-palette"></i> {t('Themes and Colors')}
           </span>
           <span onClick={() => setModalSignOut(true)}>
-            <i className="fas fa-sign-out-alt"></i> Sair
+            <i className="fas fa-sign-out-alt"></i> {t('Sign Out')}
           </span>
         </MenuList>
       </MenuSection>
       <ThemeModal show={modalTheme} setShow={setModalTheme} />
       <SignOutModal show={modalSignOut} setShow={setModalSignOut} />
+      <LanguageModal show={modalLanguage} setShow={setModalLanguage} />
     </Menu>
   )
 }
