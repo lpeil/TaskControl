@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+
+import ThemeModal from '../../modals/Theme'
+import SignOutModal from '../../modals/SignOut'
 
 import {
   Menu,
@@ -10,9 +13,14 @@ import {
 } from './style';
 
 const LeftMenu = () => {
+  const [modalTheme, setModalTheme] = useState(false);
+  const [modalSignOut, setModalSignOut] = useState(false);
+  const [modalSettings, setModalSettings] = useState(false);
+  const [modalLanguage, setModalLanguage] = useState(false);
+
   return (
     <Menu>
-      <MenuHome to="/">Control</MenuHome>
+      <MenuHome to="/">Task Control</MenuHome>
       <MenuSection>
         <MenuSectionTitle>
           <span>Projetos</span>
@@ -34,20 +42,22 @@ const LeftMenu = () => {
           <span>Configurações</span>
         </MenuSectionTitle>
         <MenuList>
-          <NavLink to="/myaccount" activeClassName="active">
+          <span onClick={() => setModalSettings(true)}>
             <i className="fas fa-user-circle"></i> Minha Conta
-          </NavLink>
-          <NavLink to="/language" activeClassName="active">
+          </span>
+          <span onClick={() => setModalLanguage(true)}>
             <i className="fas fa-globe"></i> Idioma
-          </NavLink>
-          <NavLink to="/themes" activeClassName="active">
+          </span>
+          <span onClick={() => setModalTheme(true)}>
             <i className="fas fa-palette"></i> Tema e Cores
-          </NavLink>
-          <NavLink to="/signout" activeClassName="active">
-          <i className="fas fa-sign-out-alt"></i> Sair
-          </NavLink>
+          </span>
+          <span onClick={() => setModalSignOut(true)}>
+            <i className="fas fa-sign-out-alt"></i> Sair
+          </span>
         </MenuList>
       </MenuSection>
+      <ThemeModal show={modalTheme} setShow={setModalTheme} />
+      <SignOutModal show={modalSignOut} setShow={setModalSignOut} />
     </Menu>
   )
 }

@@ -13,13 +13,24 @@ themes.dark = {
 
 themes.light = {
   bg: '#FFF',
-  menu: '#DDD',
+  menu: '#F7F6F3',
   primary: '#397CC3',
-  action: '#BBB',
-  text: '#000',
+  action: '#D9D8D6',
+  text: '#37352f',
   success: '#4CAF50',
   danger: '#ED4237',
   warning: '#4896F3'
+}
+
+themes.dracula = {
+  bg: '#282a36',
+  menu: '#44475a',
+  primary: '#6272a4',
+  action: '#6272a4',
+  text: '#f8f8f2',
+  success: '#4CAF50',
+  danger: '#ff5555',
+  warning: '#ffb86c'
 }
 
 export default themes;

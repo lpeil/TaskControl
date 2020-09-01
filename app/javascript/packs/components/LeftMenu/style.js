@@ -44,14 +44,15 @@ export const MenuList = styled.div`
 
   margin: 5px 0;
   
-  & a {
+  & a, span {
     font-size: 14px;
     padding: 5px 0 5px 15px;
 
     transition: .25s;
+    cursor: pointer;
   }
 
-  & a:hover {
+  & a:hover, span:hover {
     background-color: ${props => props.theme.action};
   }
 

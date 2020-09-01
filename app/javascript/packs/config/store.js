@@ -3,14 +3,14 @@ import { createStore } from 'redux';
 export const initial = {
   alerts: [],
   user: {},
-  theme: 'dark',
+  theme: localStorage.getItem('theme') ?? 'dark',
+  createdTheme: JSON.parse(localStorage.getItem('createdTheme')) ?? {},
   locale: 'pt-BR'
 }
 
 function reducer(state = initial, action) {
   switch(action.type) {
     case 'setAlert':
-      alertTimeOut(action.alert, state)
       return {...state, alerts: [...state.alerts, action.alert]}
     case 'setAlerts':
       return {...state, alerts: action.alerts }
@@ -18,13 +18,15 @@ function reducer(state = initial, action) {
       return {...state, alerts: [] }
     case 'setUser':
       return {...state, user: action.user }
+    case 'signOut':
+      return {...state, user: {} }
+    case 'changeTheme':
+      return {...state, theme: action.theme }
+    case 'setCreatedTheme':
+      return {...state, createdTheme: action.theme }
     default:
       return state;
   }
-}
-
-const alertTimeOut = (alert, state) => {
-  const newAlerts = state.alerts.filter(item => item != alert);
 }
 
 export default createStore(reducer, initial);
